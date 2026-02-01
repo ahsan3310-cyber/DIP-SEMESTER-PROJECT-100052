@@ -1,7 +1,7 @@
 # AI Image Denoiser
 
-- **Student Name**: Mouzan Raza
-- **Roll Number**: 100054
+- **Student Name**: Zain Ul abadn
+- **Roll Number**: 100052
 - **Course Name**: Digital Image Processing
 - **Project Description**: 
   A premium, production-ready web application for AI-powered image denoising using the state-of-the-art NAFNet architecture.
@@ -48,3 +48,4 @@
 
 - **Conclusion**:
   This project successfully implements a state-of-the-art image denoising solution using NAFNet. The model demonstrates superior performance in recovering fine details from noisy images. The accompanying web application makes this advanced technology accessible and easy to use.
+
