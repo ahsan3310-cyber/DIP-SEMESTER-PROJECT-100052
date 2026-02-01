@@ -1,0 +1,11 @@
+streamlit
+torch>=2.5.0
+torchvision>=0.20.0
+pillow
+numpy<2.0.0
+huggingface_hub
+streamlit_image_comparison
+opencv-python
+fastapi
+uvicorn
+python-multipart

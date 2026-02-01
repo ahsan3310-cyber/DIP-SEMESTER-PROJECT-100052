@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Denoiser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ AI Image Denoiser</h1>
+            <p>Restore clarity to your photos instantly with our advanced Denoiser model.</p>
+        </header>
+
+        <main>
+            <div class="upload-section" id="upload-area">
+                <input type="file" id="file-input" accept="image/*" hidden>
+                <div class="upload-content">
+                    <svg title="Upload Icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-upload-cloud">
+                        <polyline points="16 16 12 12 8 16"></polyline>
+                        <line x1="12" y1="12" x2="12" y2="21"></line>
+                        <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+                        <polyline points="16 16 12 12 8 16"></polyline>
+                    </svg>
+                    <p>Drag & Drop your noisy image here</p>
+                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Browse
+                        Files</button>
+                    <p class="file-info" id="file-name"></p>
+                </div>
+            </div>
+
+            <div class="process-section" id="process-section" style="display: none;">
+                <button id="denoise-btn" class="btn-action">
+                    <span>Clean Image</span>
+                    <div class="spinner" id="loading-spinner"></div>
+                </button>
+            </div>
+
+            <div class="result-section" id="result-section" style="display: none;">
+                <h2>Results</h2>
+                <div class="comparison-container">
+                    <div class="image-wrapper">
+                        <span class="label">Original</span>
+                        <img id="original-image" src="" alt="Noisy Image">
+                    </div>
+                    <div class="arrow">MY MAGIC →</div>
+                    <div class="image-wrapper">
+                        <span class="label">Denoised</span>
+                        <img id="processed-image" src="" alt="Denoised Image">
+                    </div>
+                </div>
+                <div class="download-area">
+                    <a id="download-link" href="#" download="denoised_image.png" class="btn-secondary">Download
+                        Result</a>
+                    <button class="btn-text" onclick="location.reload()">Process Another</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Mouzan Raza • <a href="https://github.com/mouzanraza/image-denoiser" target="_blank">View on
+                    GitHub</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
