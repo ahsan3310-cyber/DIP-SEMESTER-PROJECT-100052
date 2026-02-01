@@ -1,0 +1,43 @@
+# ------------------ Python ------------------ #
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# ------------------ Virtual Environment ------------------ #
+# Common venv folder names
+venv/
+env/
+.DIP_env/
+.env/
+.venv/
+
+# ------------------ IDE / Editor Files ------------------ #
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------ System Files ------------------ #
+.DS_Store
+Thumbs.db
+
+# ------------------ Data / Models ------------------ #
+# Do NOT push model weights (use Hugging Face Hub)
+*.pth
+*.ckpt
+*.h5
+*.pt
+
+# ------------------ Jupyter Notebook ------------------ #
+.ipynb_checkpoints
+
+# ------------------ Streamlit ------------------ #
+.streamlit/
+
+# ------------------ Logs / Misc ------------------ #
+*.tmp
+*.bak
+*.swp
